@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="charset=utf-8">
+<title>CSS Group Challenge</title>
+<link rel="stylesheet" type="text/css" href="challenge.css">
+<style>
+	header {
+		background-color: #ccb3ff;
+		position: relative; 
+
+	}
+	header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 280px; 
+    height: 80px; 
+    background-color: #99bbff;
+	opacity: 0.5;
+    }
+	
+	nav {
+		background-color: blue;
+		margin-top: 4px;
+		font-weight: bold;
+		font-family: Arial;
+		font-size: medium;
+	}
+	li a {color:white}
+	footer {
+		background-color: #ccb3ff;
+		height: 60px;
+		padding-top: 10px;
+	}
+	.footerNav ul  {
+		list-style-type: none;
+		text-align: center;
+
+	}
+	.footerNav li {
+            display: inline;
+			padding: 0 8px;
+	}
+	footer p {
+            text-align: center;
+			margin-top: 3px;
+            font-weight: bold;
+			font-style: italic;
+        }
+	main {
+		background-color: #e8fdfd;
+		margin-top:5px;
+		}
+	main p {
+		font-size: medium;
+		color:#29290a;
+	}
+</style>
+</head>
+<body>
+<div id="container">
+	<header>
+		<img src="images/gclogo.png" width="393" height="96" alt="Challenge Logo">
+	</header>
+	<nav class="globalNav">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/">About</a></li>
+			<li><a href="/">Products</a></li>
+			<li><a href="/">Services</a></li>
+			<li><a href="/">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Welcome to CSS Group Challenge</h2>
+		<img class="mainimage" src="images/gcimage.png" width="199" height="145" alt="Woman on computer">
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>	
+	</main>
+	<footer>
+		<nav class="footerNav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">About</a></li>
+				<li><a href="/">Products</a></li>
+				<li><a href="/">Services</a></li>
+				<li><a href="/">Contact</a></li>
+			</ul>
+		</nav>
+		<p>
+			&copy; Copyright - CSS Group Challenge
+		</p>
+	</footer>
+</div>
+</body>
+</html>
